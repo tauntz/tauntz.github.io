@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      function copyAndRedirect() {
+        navigator.clipboard.writeText("googleidv://magic.veriff.me/v/asd").then(() => {
+          window.location.href = "https://play.google.com/store/apps/details?id=com.veriff.demo";
+        }).catch(() => {
+          window.location.href = "https://play.google.com/store/apps/details?id=com.veriff.demo";
+        });
+      }
+    </script>
+  </head>
+  <body>
+      <button onclick="copyAndRedirect()">Copy stuff to clipboard and redirect to Google Play</button>
+  </body>
+</html>
